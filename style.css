@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+:root{
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--Light-grey);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+main{
+    max-width: 800px;
+    background-color: var(--White);
+    padding: 2.5rem;
+    border-radius: 15px;
+    border-bottom-right-radius: 120px;
+}
+
+main .input-feild{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+main .input-feild label{
+    font-size: 1rem;
+    margin: 0 2rem;
+    margin-bottom: .75rem;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--Smokey-grey);
+}
+
+main .input-feild input{
+    display: block;
+    padding: .5rem ;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: .5rem ;
+    width: 5rem;
+    border: 1px solid var(--Light-grey);
+    border-radius: 8px;
+    outline: none;
+}
+
+main .input-feild .error{
+    color: var(--Light-red);
+    font-size: .75rem;
+    text-transform: lowercase;
+    margin-top: -.001rem;
+}
+
+main .input-feild .none{
+    display: none;
+}
+
+main .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .box .line{
+    width: 100%;
+    border-top: 2px solid var(--Light-grey);
+}
+
+main .box .img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--Purple);
+    cursor: pointer;
+}
+
+main .box .img-container img{
+    width: 40px;
+    height: 40px;
+}
+
+main .result strong{
+    display: block;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 800;
+}
+
+main .result strong span{
+    color: var(--Purple);
+    padding-right: .25rem;
+}
+
+footer{
+    text-align: center;
+    color: var(--Off-black);
+}
+
+footer a{
+    color: var(--Purple);
+    text-decoration: none;
+}
+
+@media screen and (max-width:700px) {
+    main{
+        width: 95%;
+        margin: 0 .5rem;
+        padding: .5rem;
+    }
+
+    main .input-feild{
+        margin-top: 2rem;
+    }
+
+    main .input-feild label{
+        margin: 0 .5rem;
+    }
+    
+    main .input-feild input{
+        width: 4.5rem;
+    
+    }
+
+    main .box{
+        width: 100%;
+        position: relative;
+        margin: 2.85rem 0;
+    }
+
+    main .box .img-container{
+        position: absolute;
+    }
+
+    main .result{
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
